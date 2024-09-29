@@ -1,0 +1,41 @@
+.video-tour-content {
+  background: transparent url("../assets/bg-video-tour.jpg") no-repeat center
+    center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-attachment: fixed;
+  padding: 95px 0;
+  cursor: pointer;
+  position: relative;
+}
+.video-tour-content:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+}
+.video-tour-content .video {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+.video-tour-content .video .video-title {
+  padding-bottom: 25px;
+  font-size: 48px;
+  color: #fff;
+}
+.video-tour-content .video .video-title span {
+  color: #ffa037;
+  display: block;
+  text-align: center;
+}
+.video-tour-content .video span {
+  margin: 0 auto;
+}

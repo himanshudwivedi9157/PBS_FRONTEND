@@ -1,0 +1,65 @@
+
+.post-date {
+    position: absolute;
+    background: #ffa037;
+    color: #fff; }
+    .post-date span {
+      display: block;
+      padding: 0 14px; }
+      .post-date span:first-child {
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: -5px;
+        margin-bottom: -13px;
+        font-family: 'Roboto Slab'; }
+      .post-date span:last-child {
+        font-size: 16px;
+        margin-bottom: 6px; }
+  
+
+        .events-content  {
+            padding: 35px 0px 0 0px; 
+            padding: 0 10px;
+        }
+
+
+
+ 
+.events-content .item {
+    padding-left: 30px;
+    position: relative; }
+    .events-content .item figure {
+      position: relative;
+      overflow: hidden; }
+      .events-content .item figure img {
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, transform 1s; }
+      .events-content .item figure:hover img {
+        opacity: 0.8;
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1); }
+    .events-content .item .post-date {
+      top: 15px;
+      left: 15px; }
+    .events-content .item .info {
+      text-align: center;
+      padding: 35px 40px 0 40px; }
+      .events-content .item .info .title {
+        font-size: 25px;
+        margin-bottom: 14px; }
+      .events-content .item .info .desc .time-address i {
+        font-size: 18px;
+        color: #333;
+        padding-right: 5px; }
+      .events-content .item .info .desc .time-address span {
+        margin-right: 7px; }
+        .events-content .item .info .desc .time-address span:last-child {
+          margin-right: 0px; }
+      .events-content .item .info .desc p {
+        padding-top: 18px;
+        padding-bottom: 20px; }
+      .events-content .item .info .desc .readmore {
+        color: #333; }
+        .events-content .item .info .desc .readmore:hover {
+          color: #ffa037; }
+         

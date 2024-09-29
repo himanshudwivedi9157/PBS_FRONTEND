@@ -1,0 +1,157 @@
+.footer {
+  background: #fff url("../assets/footer-background.jpg") no-repeat center
+    center;
+  background-size: cover;
+  color: #ccc;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+
+/* Footer Top Content */
+.footer-top-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-intro {
+  line-height: 1.7;
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+}
+
+/* Footer Title Styling */
+.footer-title h4 {
+  font-size: 22px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+
+/* Footer Links */
+.footer-link-menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-link-menu ul li {
+  margin-bottom: 15px;
+}
+
+.footer-link-menu ul li a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link-menu ul li a:hover {
+  color: #ffa037;
+}
+
+/* Location Section */
+.lastest-news iframe {
+  border: none;
+  width: 100%;
+  height: 250px;
+}
+
+/* Contact Us Section */
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul li i {
+  color: #ffa037;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.footer-contact ul li span {
+  color: #ccc;
+  display: block;
+}
+
+.footer-contact ul li a {
+  color: #ffa037;
+  text-decoration: none;
+}
+
+.footer-contact ul li a:hover {
+  color: #fff;
+}
+
+/* Social Media Icons */
+.socials ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.socials ul li {
+  margin-right: 10px;
+}
+
+.socials ul li a {
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.socials ul li a:hover {
+  color: #ffa037;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-bottom .copyright a {
+  color: #ffa037;
+  text-decoration: none;
+}
+
+.footer-bottom .copyright a:hover {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-top-content {
+    flex-direction: column;
+  }
+
+  .footer-info,
+  .footer-menu,
+  .lastest-news,
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+
+  .footer-info,
+  .footer-menu,
+  .footer-contact {
+    text-align: center;
+  }
+}

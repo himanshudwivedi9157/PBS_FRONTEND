@@ -1,0 +1,25 @@
+.our-story-content .section-title {
+  margin-bottom: 35px;
+}
+.our-story-content p {
+  margin-bottom: 18px;
+}
+.our-story-content ul li {
+  width: 50%;
+  float: left;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.our-story-content ul li i {
+  color: #ffa037;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.section-title-left h2:after {
+  left: 0;
+}

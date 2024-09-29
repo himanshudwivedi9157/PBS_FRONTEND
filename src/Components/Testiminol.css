@@ -1,0 +1,50 @@
+.aboutus-testimonials2-content .item .info {
+  padding: 30px 20px 30px 30px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.aboutus-testimonials2-content .item figure {
+  display: flex; /* Ensures proper alignment */
+  align-items: center; /* Aligns items in the center */
+}
+
+.aboutus-testimonials2-content .item figure img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.aboutus-testimonials2-content .item figure .thumb-info {
+  padding-left: 15px;
+}
+
+.aboutus-testimonials2-content .item figure .thumb-info .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.aboutus-testimonials2-content .item figure .thumb-info .job-title {
+  font-size: 16px;
+  color: #777;
+}
+
+.section-padding-large {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.aboutus-testimonials2 .item {
+  margin: 0 15px;
+}
+
+.slick-slide {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slick-slide:hover {
+  transform: scale(1.05);
+}

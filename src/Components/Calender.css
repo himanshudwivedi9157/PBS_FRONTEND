@@ -1,0 +1,40 @@
+.filter-events {
+  margin-bottom: 60px;
+}
+.filter-events li span {
+  font-family: "Roboto Slab";
+  color: #333;
+  font-weight: bold;
+  margin: 8px 25px;
+  padding: 0;
+  padding-bottom: 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.filter-events li .is-checked {
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffa037;
+}
+
+.events-page {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.events-page .events-grid .item {
+  margin-bottom: 60px;
+}
+
+.events-page-two .events-content .item .info {
+  padding: 35px 0px 0 0px;
+}
+.events-page-two .events-content .item .info .desc {
+  padding: 0 10px;
+}
