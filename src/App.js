@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Infrastructure from "./pages/Infrastructure.jsx";
 import Careers from "./pages/Careers.jsx";
 import Contact from "./pages/Contact.jsx";
+import Ragister from "./pages/Ragister.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Infrastructure" element={<Infrastructure />} />
           <Route path="/Careers" element={<Careers />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Ragister" element={<Ragister />} />
         </Routes>
       </div>
     </Router>

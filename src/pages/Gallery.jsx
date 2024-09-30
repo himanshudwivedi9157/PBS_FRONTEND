@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar.jsx";
+import Footer from "../Components/Footer.jsx";
+import Gallery from "../Components/Gallery.jsx";
 import { Link } from "react-router-dom";
 
-const Gallery = () => {
+const GalleryPage = () => {
   return (
     <>
       <>
@@ -21,11 +22,12 @@ const Gallery = () => {
             </li>
           </ol>
         </nav>
-        <h1 className="p-3">Welcome To Gallery Page</h1>
+
+        <Gallery />
         <Footer />
       </>
     </>
   );
 };
 
-export default Gallery;
+export default GalleryPage;

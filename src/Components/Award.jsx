@@ -9,7 +9,7 @@ const Award = () => {
     <section className="aboutus-testimonials2 section-padding-large">
       <div className="container">
         <div className="section-title section-title-left section-title-m50">
-          <h2>Awards - LPS GLOBAL School in Noida</h2>
+          <h2>Awards - PBS College in Bihar</h2>
         </div>
         <div className="aboutus-testimonials2-content">
           <div className="row">

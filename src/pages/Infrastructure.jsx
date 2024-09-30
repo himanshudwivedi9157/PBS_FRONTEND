@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
+import Almuni from "../Components/Almuni";
 
 const Infrastructure = () => {
   return (
@@ -17,7 +18,9 @@ const Infrastructure = () => {
           </li>
         </ol>
       </nav>
-      <h1 className="p-3">Welcome To Infrastructure Page</h1>
+
+      <Almuni />
+
       <Footer />
     </>
   );

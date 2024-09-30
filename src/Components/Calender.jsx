@@ -7,7 +7,7 @@ const Calender = () => {
       <section className="events events-page">
         <div className="container">
           <div className="section-title section-title-left section-title-m50">
-            <h2>Activity Calendar September 2020-2021</h2>
+            <h2>Activity Calendar September 2024-2025</h2>
           </div>
           <div className="events-content">
             <ul className="filter-events display-flex-center">

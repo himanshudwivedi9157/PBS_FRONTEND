@@ -11,7 +11,7 @@ const Gallery = () => {
       <section className="our-gallery section-padding-large">
         <div className="container">
           <div className="section-title section-title-left section-title-m50">
-            <h2>Gallery - LPS GLOBAL School in Noida</h2>
+            <h2>Gallery - BPS School in Bihar</h2>
           </div>
           <div className="our-gallery-content">
             <div className="row">

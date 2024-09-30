@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
+import ContectForm from "../Components/ContectForm";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
           </li>
         </ol>
       </nav>
-      <h1 className="p-3">Welcome To Contact Page</h1>
+      <ContectForm />
       <Footer />
     </>
   );

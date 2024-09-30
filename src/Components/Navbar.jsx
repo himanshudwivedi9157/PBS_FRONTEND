@@ -23,8 +23,11 @@ const Navbar = () => {
               <div className="header-top-account">
                 <div className="header-login">
                   {" "}
-                  <Link to="/" className="button1">
-                    Virtual Tour
+                  <Link to="/Ragister" className="button1">
+                    Login
+                  </Link>
+                  <Link to="/Admissions" className="button1">
+                    Admission
                   </Link>
                   {/* <marquee scrollamount="5" scrolldelay="40" onMouseOver="this.stop();" onMouseOut="this.start();" style="color:#fff; font-size:12px;">
 						<a href="#en_addmission">Admission Open for the academic year 2023-24 from Pre-Nursery to XI.     Scholarships for students from 50k-1Lakh. </a>
@@ -109,10 +112,10 @@ const Navbar = () => {
                             </li>
 
                             <li className="menu-item">
-                              <Link to="/">Parent Portal </Link>
+                              <Link to="/">Admission Procedure </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/">Admission Process </Link>
+                              <Link to="/">Academic Calendar </Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/">Fee Structure </Link>
@@ -164,47 +167,32 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className="menu-item">
-                          <Link to="/Curriculum">Curriculum </Link>
+                          <Link to="/Curriculum">Activity</Link>
                           <ul className="sub-menu">
                             <li className="menu-item">
-                              <Link to="/Curriculum">Clubs &amp; Hobbies </Link>
+                              <Link to="/Curriculum">Academic Activity </Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/Curriculum">Sports </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Curriculum">House System </Link>
+                              <Link to="/Curriculum">Cultural Activities</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Curriculum">NCC </Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/Curriculum">
-                                Trips and Excursions{" "}
+                                Extracurricular Activity
                               </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Curriculum">
-                                Art &amp; Craft Studio{" "}
-                              </Link>
+                              <Link to="/Curriculum">Best Practice </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Curriculum">Dance &amp; Music </Link>
+                              <Link to="/Curriculum">Book Journal</Link>
                             </li>
-                            <li className="menu-item">
-                              <Link to="/Curriculum">Events</Link>
-                              <ul className="sub-menu">
-                                <li className="menu-item">
-                                  <Link to="/Curriculum">
-                                    School Assembly &amp; Special Assemblies{" "}
-                                  </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link to="/Curriculum">Monthly Report </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link to="/Curriculum">Article </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="menu-item">
+                            {/* <li className="menu-item">
                               <Link to="/Curriculum">Workshops </Link>
                               <ul className="sub-menu">
                                 <li className="menu-item">
@@ -218,7 +206,7 @@ const Navbar = () => {
                                   </Link>
                                 </li>
                               </ul>
-                            </li>
+                            </li> */}
                           </ul>
                         </li>
                         <li className="menu-item">
@@ -227,29 +215,31 @@ const Navbar = () => {
                             <li className="menu-item">
                               <Link to="/Gallery">Image </Link>
                             </li>
-                            <li className="menu-item">
+                            {/* <li className="menu-item">
                               <Link to="/Gallery">Walkthrough </Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/Gallery">Video Gallery </Link>
-                            </li>
+                            </li> */}
                           </ul>
                         </li>
                         <li className="menu-item">
-                          <Link to="/Infrastructure">Infrastructure </Link>
+                          <Link to="/Infrastructure">Alumni</Link>
                           <ul className="sub-menu">
                             <li className="menu-item">
-                              <Link to="/Infrastructure">School Campus</Link>
-                            </li>
-                            <li className="menu-item">
                               <Link to="/Infrastructure">
-                                Smart Classrooms{" "}
+                                Alumni Registration
                               </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Infrastructure">Library</Link>
+                              <Link to="/Infrastructure">Our Alumni </Link>
                             </li>
                             <li className="menu-item">
+                              <Link to="/Infrastructure">
+                                Directory of Alumni
+                              </Link>
+                            </li>
+                            {/* <li className="menu-item">
                               <Link to="/Infrastructure">Infirmary </Link>
                             </li>
 
@@ -258,13 +248,32 @@ const Navbar = () => {
                             </li>
                             <li className="menu-item">
                               <Link to="/Infrastructure">Laboratories </Link>
-                            </li>
+                            </li> */}
                           </ul>{" "}
                         </li>
 
                         <li className="menu-item">
-                          <Link to="/Careers">Careers </Link>
-                          <ul className="sub-menu"></ul>
+                          <Link to="/Careers">Facilities</Link>
+                          <ul className="sub-menu">
+                            <li className="menu-item">
+                              <Link to="/Contact">Class Room </Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Contact">Library </Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Contact">Laboratories</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Contact">Infrastracture</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Contact">Safety and Security</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Contact">Other facility </Link>
+                            </li>
+                          </ul>
                         </li>
                         <li className="menu-item">
                           <Link to="/Contact">Contact </Link>
@@ -273,7 +282,7 @@ const Navbar = () => {
                               <Link to="/Contact">Reach Us </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Contact">Feedback/Suggestion </Link>
+                              <Link to="/Contact">Feedback </Link>
                             </li>
                           </ul>
                         </li>

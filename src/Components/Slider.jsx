@@ -1,8 +1,6 @@
 import React from "react";
 import "./Slider.css";
 import silder_1 from "../assets/slider_1.jpg";
-import silder_2 from "../assets/slider_2.jpeg";
-import silder_3 from "../assets/slider_3.jpg";
 import silder_4 from "../assets/slider_2.jpeg";
 import silder_5 from "../assets/slider_5.jpg";
 

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
+import AdmissionForm from "../Components/AdmissionForm";
 
 const Admissions = () => {
   return (
@@ -17,7 +18,7 @@ const Admissions = () => {
           </li>
         </ol>
       </nav>
-      <h1 className="p-3">Welcome To Admissions Page</h1>
+      <AdmissionForm />
       <Footer />
     </>
   );
