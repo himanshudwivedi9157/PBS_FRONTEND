@@ -126,38 +126,40 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className="menu-item">
-                          <Link to="/Academics">Academics </Link>
+                          <Link to="/Academics"> Department </Link>
                           <ul className="sub-menu">
                             <li className="menu-item">
-                              <Link to="/Academics">Pre Primary</Link>
+                              <Link to="/Academics">Department of Physics</Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Academics">Primary </Link>
+                              <Link to="/Academics">Department of Hindi</Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Academics">Middle</Link>
+                              <Link to="/Academics">Department of English</Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Academics">Secondary </Link>
-                            </li>
-                            <li className="menu-item">
-                              <Link to="/Academics">Promotion Policy</Link>
+                              <Link to="/Academics">Department of Physics</Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/Academics">
-                                Assessment &amp; Evaluation Policy{" "}
+                                Department of Chemistry
                               </Link>
-                            </li>
-                            <li className="menu-item">
-                              <Link to="/Academics">The Learning Model</Link>
                             </li>
                             <li className="menu-item">
                               <Link to="/Academics">
-                                School Holidays 2019-20
+                                Department of Economics
                               </Link>
                             </li>
                             <li className="menu-item">
-                              <Link to="/Academics">School Timings</Link>
+                              <Link to="/Academics">Department of Botany</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Academics">Department of Zoology</Link>
+                            </li>
+                            <li className="menu-item">
+                              <Link to="/Academics">
+                                Department of Mathematics
+                              </Link>
                             </li>
                           </ul>
                         </li>
