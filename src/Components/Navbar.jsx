@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { IoMdPhonePortrait } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import new_logo from "../assets/new_logo.png";
+import new_logo from "../assets/lps_web_logo.png";
 
 const Navbar = () => {
   return (
@@ -317,6 +317,322 @@ const Navbar = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="hidden-tablet-landscape-up header-mobile">
+          <div className="header-top-mobile">
+            <div className="container-fluid">
+              <div className="logo">
+                <Link to="/">
+                  <img src={new_logo} alt="LPS Global School" />
+                </Link>
+              </div>
+
+              <button
+                class="hamburger hamburger--spin hidden-tablet-landscape-up"
+                id="toggle-icon"
+              >
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className="au-nav-mobile">
+            <nav className="menu-mobile">
+              <div>
+                <ul className="au-navbar-menu">
+                  <li className="menu-item curent-menu-item">
+                    <Link to="/">Home </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">About </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Core Philosophy </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Mission &amp; Vision </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Our Motto </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Board of Management </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">School Emblem </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Flag Bearers</Link>
+                        <span className="arrow">
+                          <i></i>
+                        </span>
+                        <ul className="sub-menu">
+                          <li className="menu-item">
+                            <Link to="/">Vice Chairman </Link>
+                          </li>
+                          <li className="menu-item">
+                            <Link to="/">C.E.O </Link>
+                          </li>
+                          <li className="menu-item">
+                            <Link to="/">Principal </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">From the Principal's Desk </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">LPS Committees </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Managing Committee </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Annual Report </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">Admissions </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Online Registration </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Parent Portal </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Admission Process </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Fee Structure </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Student Login </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">Academics </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Pre Primary</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Primary </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Middle</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Secondary </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Promotion Policy</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Assessment &amp; Evaluation Policy </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">The Learning Model</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">School Holidays 2019-20</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">School Timings</Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="menu-item">
+                    <Link to="/">Curriculum </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Clubs &amp; Hobbies </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Sports </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">House System </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Trips and Excursions </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Art &amp; Craft Studio </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Dance &amp; Music </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Events</Link>
+                        <span className="arrow">
+                          <i></i>
+                        </span>
+                        <ul className="sub-menu">
+                          <li className="menu-item">
+                            <Link to="/">
+                              School Assembly &amp; Special Assemblies{" "}
+                            </Link>
+                          </li>
+                          <li className="menu-item">
+                            <Link to="/">Monthly Report </Link>
+                          </li>
+                          <li className="menu-item">
+                            <Link to="/">Article </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Workshops </Link>
+                        <span className="arrow">
+                          <i></i>
+                        </span>
+                        <ul className="sub-menu">
+                          <li className="menu-item">
+                            <Link to="/">Workshops for Teachers </Link>
+                          </li>
+                          <li className="menu-item">
+                            <Link to="/">Workshops for Students </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">Gallery </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Image </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Walkthrough </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Video Gallery </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">Infrastructure </Link>
+                    <span className="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li class="menu-item">
+                        <Link to="/">School Campus</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Smart Classrooms </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Library</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Infirmary </Link>
+                      </li>
+
+                      <li className="menu-item">
+                        <Link to="/">Transport</Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Laboratories </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="menu-item">
+                    <Link to="/">Contact </Link>
+                    <span class="arrow">
+                      <i></i>
+                    </span>
+                    <ul className="sub-menu">
+                      <li className="menu-item">
+                        <Link to="/">Reach Us </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Feedback/Suggestion </Link>
+                      </li>
+                      <li className="menu-item">
+                        <Link to="/">Career With Us </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <div className="header-top">
+            <div className="container-fluid">
+              <div className="header-top-content display-flex">
+                <div className="header-top-info">
+                  <Link to="6386898043" class="telephone">
+                    <i className="fas fa-mobile-alt"></i>Call us +91 9205358900
+                    / +91 9205358901
+                  </Link>
+                  <Link to="himanshudwivedi9157@gmail.com" class="email">
+                    <i className="far fa-envelope"></i>info@lpsglobal.org
+                  </Link>
+                </div>
+                <div className="header-top-account">
+                  {/* <marquee
+                    scrollamount="5"
+                    scrolldelay="40"
+                    onmouseover="this.stop();"
+                    onmouseout="this.start();"
+                    style={{ color: "#fff", fontSize: "12px" }}
+                  >
+                    <Link to="/">
+                      Admission Open for the academic year 2023-24 from
+                      Pre-Nursery to
+                      XI.�&nbsp;�&nbsp;�&nbsp;�&nbsp;�&nbsp;Scholarships for
+                      students from 50k-1Lakh.
+                    </Link>
+                  </marquee> */}
+                </div>
+              </div>
+              <p align="center">
+                <Link to="/" class="button1">
+                  Online Registration
+                </Link>
+
+                <Link to="/" class="button1">
+                  Student's Login
+                </Link>
+
+                <Link to="/" class="button1">
+                  Online Fee Payment
+                </Link>
+
+                <Link to="/" class="button1">
+                  Transfer Certificate
+                </Link>
+              </p>
+            </div>
+          </div>
+          <div class="clear"></div>
         </div>
       </header>
     </>
