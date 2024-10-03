@@ -12,10 +12,13 @@ const Navbar = () => {
           <div className="container">
             <div className="header-top-content display-flex">
               <div className="header-top-info" style={{ width: "50%" }}>
-                <Link to="tel:09205358900" className="telephone">
+                <Link to="tel:6386898043" className="telephone">
                   <IoMdPhonePortrait /> Call us +91-6386898043 / +91 6386898043{" "}
                 </Link>
-                <Link to="mailto:info@lpsglobal.org" className="email">
+                <Link
+                  to="mailto:himanshudwivedi9157@gmail.com"
+                  className="email"
+                >
                   <IoMail />
                   himanshudwivedi9157@gmail.com
                 </Link>
@@ -26,12 +29,6 @@ const Navbar = () => {
                   <Link to="/Ragister" className="button1">
                     Login
                   </Link>
-                  <Link to="/Admissions" className="button1">
-                    Admission
-                  </Link>
-                  {/* <marquee scrollamount="5" scrolldelay="40" onMouseOver="this.stop();" onMouseOut="this.start();" style="color:#fff; font-size:12px;">
-						<a href="#en_addmission">Admission Open for the academic year 2023-24 from Pre-Nursery to XI.     Scholarships for students from 50k-1Lakh. </a>
-					</marquee>   */}
                 </div>
               </div>
             </div>
@@ -239,16 +236,6 @@ const Navbar = () => {
                                 Directory of Alumni
                               </Link>
                             </li>
-                            {/* <li className="menu-item">
-                              <Link to="/Infrastructure">Infirmary </Link>
-                            </li>
-
-                            <li className="menu-item">
-                              <Link to="/Infrastructure">Transport</Link>
-                            </li>
-                            <li className="menu-item">
-                              <Link to="/Infrastructure">Laboratories </Link>
-                            </li> */}
                           </ul>{" "}
                         </li>
 
@@ -329,11 +316,11 @@ const Navbar = () => {
               </div>
 
               <button
-                class="hamburger hamburger--spin hidden-tablet-landscape-up"
+                className="hamburger hamburger--spin hidden-tablet-landscape-up "
                 id="toggle-icon"
               >
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                <span className="hamburger-box">
+                  <span className="hamburger-inner"></span>
                 </span>
               </button>
             </div>
@@ -344,7 +331,7 @@ const Navbar = () => {
                 <ul className="au-navbar-menu">
                   <li className="menu-item curent-menu-item">
                     <Link to="/">Home </Link>
-                    <span className="arrow">
+                    <span className="+">
                       <i></i>
                     </span>
                   </li>
@@ -589,29 +576,15 @@ const Navbar = () => {
               <div className="header-top-content display-flex">
                 <div className="header-top-info">
                   <Link to="6386898043" class="telephone">
-                    <i className="fas fa-mobile-alt"></i>Call us +91 9205358900
-                    / +91 9205358901
+                    <i className="fas fa-mobile-alt"></i>Call us +91 6386898043
+                    / +91 6386898043
                   </Link>
                   <Link to="himanshudwivedi9157@gmail.com" class="email">
-                    <i className="far fa-envelope"></i>info@lpsglobal.org
+                    <i className="far fa-envelope"></i>
+                    himanshudwivedi9157@gmail.com
                   </Link>
                 </div>
-                <div className="header-top-account">
-                  {/* <marquee
-                    scrollamount="5"
-                    scrolldelay="40"
-                    onmouseover="this.stop();"
-                    onmouseout="this.start();"
-                    style={{ color: "#fff", fontSize: "12px" }}
-                  >
-                    <Link to="/">
-                      Admission Open for the academic year 2023-24 from
-                      Pre-Nursery to
-                      XI.�&nbsp;�&nbsp;�&nbsp;�&nbsp;�&nbsp;Scholarships for
-                      students from 50k-1Lakh.
-                    </Link>
-                  </marquee> */}
-                </div>
+                <div className="header-top-account"></div>
               </div>
               <p align="center">
                 <Link to="/" class="button1">
@@ -632,7 +605,8 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div class="clear"></div>
+
+          <div className="clear"></div>
         </div>
       </header>
     </>

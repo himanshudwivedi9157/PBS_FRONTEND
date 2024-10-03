@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
 import Gallery from "../Components/Gallery.jsx";
 import { Link } from "react-router-dom";
+import Hero from "../Components/Hero.jsx";
 
 const GalleryPage = () => {
   return (
@@ -24,6 +25,7 @@ const GalleryPage = () => {
         </nav>
 
         <Gallery />
+
         <Footer />
       </>
     </>

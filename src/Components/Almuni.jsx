@@ -1,92 +1,137 @@
-import "./Almuni.css";
-import React from "react";
-import Slider from "react-slick";
-import almuni_img_1 from "../assets/sonia-sharma.jpg";
-import almuni_img_2 from "../assets/Tanya-Tewatia.jpg";
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import alumni_img from "../assets/alumni_img.jpg";
 
-const Almuni = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 2,
+const AlumniPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your form submission logic here (e.g., API call)
+    console.log("Form submitted:", formData);
+    setFormData({ name: "", email: "", message: "" }); // Reset form
+  };
+
   return (
-    <>
-      <div className="slider-container">
-        <Slider {...settings}>
-          <div className="">
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+    <div className="container my-5">
+      <h1 className="text-center mb-4" style={{ color: "#2c3e50" }}>
+        Alumni Network
+      </h1>
+
+      <section className="mb-5">
+        <h2 style={{ color: "#34495e" }}>Alumni Stories</h2>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card mb-3">
+              <img src={alumni_img} className="card-img-top" alt="Alumni 1" />
+              <div className="card-body">
+                <h5 className="card-title">John Doe</h5>
+                <p className="card-text">
+                  CEO of XYZ Corporation. Graduated in 2010.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={almuni_img_2} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+          <div className="col-md-4">
+            <div className="card mb-3">
+              <img src={alumni_img} className="card-img-top" alt="Alumni 2" />
+              <div className="card-body">
+                <h5 className="card-title">Jane Smith</h5>
+                <p className="card-text">Renowned Author. Graduated in 2012.</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+          <div className="col-md-4">
+            <div className="card mb-3">
+              <img src={alumni_img} className="card-img-top" alt="Alumni 3" />
+              <div className="card-body">
+                <h5 className="card-title">Mike Johnson</h5>
+                <p className="card-text">
+                  Head of Research at ABC. Graduated in 2015.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+        </div>
+      </section>
+
+      <section className="mb-5">
+        <h2 style={{ color: "#34495e" }}>Notable Alumni</h2>
+        <ul className="list-group">
+          <li className="list-group-item">
+            Dr. A.P.J. Abdul Kalam - Former President of India
+          </li>
+          <li className="list-group-item">
+            Smt. Indira Gandhi - Former Prime Minister of India
+          </li>
+          <li className="list-group-item">Ratan Tata - Industrialist</li>
+          <li className="list-group-item">
+            Sundar Pichai - CEO of Alphabet Inc.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{ color: "#34495e" }}>Contact Us</h2>
+        <form onSubmit={handleSubmit} className="mb-3">
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
           </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
           </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
+            <textarea
+              className="form-control"
+              id="message"
+              name="message"
+              rows="3"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
           </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-          <div>
-            <img src={almuni_img_1} alt="almuni-img" />
-            <p>SONIYA B-TECH</p>
-          </div>
-        </Slider>
-      </div>
-    </>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </section>
+    </div>
   );
 };
 
-export default Almuni;
+export default AlumniPage;

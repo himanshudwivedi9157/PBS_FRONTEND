@@ -4,6 +4,7 @@ import icon_static from "../assets/icon-statistics-1.png";
 import awrd_icon from "../assets/awardicon.png";
 
 const Admission = () => {
+  // Initialize the formData state
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,27 +12,48 @@ const Admission = () => {
     message: "",
   });
 
-  // Handle input changes
+  // Handle form changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevFormData) => ({
+      ...prevFormData,
       [name]: value,
-    });
+    }));
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Thank You !! Form Submitted:", formData);
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
+    try {
+      const response = await fetch("apiurl/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      // Clear the form data
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      // Show success message
+      alert("Thank You! Your form has been submitted successfully.");
+    } catch (error) {
+      console.error("There was a problem with your submission:", error);
+      alert("There was a problem submitting your form. Please try again.");
+    }
   };
+
   return (
     <>
       <section className="sign-up section-padding-large" id="en_addmission">

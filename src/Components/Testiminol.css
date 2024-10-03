@@ -1,50 +1,38 @@
-.aboutus-testimonials2-content .item .info {
-  padding: 30px 20px 30px 30px;
-  margin-bottom: 30px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-}
-
-.aboutus-testimonials2-content .item figure {
-  display: flex; /* Ensures proper alignment */
-  align-items: center; /* Aligns items in the center */
-}
-
-.aboutus-testimonials2-content .item figure img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-.aboutus-testimonials2-content .item figure .thumb-info {
-  padding-left: 15px;
-}
-
-.aboutus-testimonials2-content .item figure .thumb-info .title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-.aboutus-testimonials2-content .item figure .thumb-info .job-title {
-  font-size: 16px;
-  color: #777;
-}
-
-.section-padding-large {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.aboutus-testimonials2 .item {
-  margin: 0 15px;
-}
-
-.slick-slide {
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 10px;
-  transition: transform 0.3s ease;
+  flex-wrap: wrap;
 }
 
-.slick-slide:hover {
-  transform: scale(1.05);
+.avatar-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-container h5 {
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  .avatar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar-container h5 {
+    font-size: 16px;
+  }
 }

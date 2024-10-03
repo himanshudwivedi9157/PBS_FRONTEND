@@ -1,57 +1,27 @@
 import React from "react";
-import "./OnlineClass.css";
-import img_1 from "../assets/online1.jpeg";
-import img_2 from "../assets/online2.jpeg";
-import img_3 from "../assets/online2.jpeg";
-import { Link } from "react-router-dom";
+import online_img from "../assets/online1.jpeg";
 
 const OnlineClass = () => {
   return (
     <>
-      <section className="events section-padding-large background-grey">
+      <section className="events section-padding-large ">
         <div className="container">
           <div className="section-title section-title-left section-title-m50">
-            <h2>Online Event - PBS College Banka in Bihar</h2>
+            <h2>Online Event - BPS College Banka in Bihar </h2>
           </div>
-          <div className="events-content">
-            <div className="row">
-              <article className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 item">
-                <figure>
-                  <center>
-                    <Link to="/">
-                      <img
-                        src={img_1}
-                        alt="LPS GLOBAL School Online Classes Image 1"
-                      />
-                    </Link>
-                  </center>
-                </figure>
-              </article>
-              <article className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 item">
-                <figure>
-                  <center>
-                    <Link to="/">
-                      <img
-                        src={img_2}
-                        alt="LPS GLOBAL School Online Classes Image 2"
-                      />
-                    </Link>
-                  </center>
-                </figure>
-              </article>
-
-              <article className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 item">
-                <figure>
-                  <center>
-                    <Link to="/">
-                      <img
-                        src={img_3}
-                        alt="LPS GLOBAL School Online Classes Image 3"
-                      />
-                    </Link>
-                  </center>
-                </figure>
-              </article>
+          <div className="row row-cols-1 row-cols-md-3 g-4 ">
+            <div className="col ">
+              <img src={online_img} alt="" />
+            </div>
+            <div className="col ">
+              <div className="col ">
+                <img src={online_img} alt="" />
+              </div>
+            </div>
+            <div className="col ">
+              <div className="col ">
+                <img src={online_img} alt="" />
+              </div>
             </div>
           </div>
         </div>

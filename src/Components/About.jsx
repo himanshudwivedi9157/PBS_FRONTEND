@@ -89,7 +89,7 @@ const About = () => {
                   style={{
                     fontSize: "28px",
                     textAlign: "center",
-                    textColur: "Black",
+                    color: "black",
                   }}
                 >
                   LPS Global School - Best CBSE College in Bihar

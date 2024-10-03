@@ -1,5 +1,3 @@
-/* 9. Header ------------------------------------------*/
-
 .header-top {
   background: #1388d1;
   padding: 15px 0;
@@ -311,6 +309,7 @@ a.button1:hover {
 }
 
 /*Navbar menu mobile*/
+
 .hidden-tablet-landscape-up {
   display: none;
 }
@@ -381,6 +380,9 @@ a.button1:hover {
   list-style-type: none;
   list-style-type: none;
   background: #ffa037;
+}
+.au-nav-mobile.open {
+  display: block;
 }
 .au-nav-mobile ul li {
   position: relative;
@@ -555,6 +557,7 @@ a.button1:hover {
 }
 
 /* 22. Responsive ------------------------------------------*/
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 100%;
@@ -1065,7 +1068,7 @@ a.button1:hover {
     padding-left: 10px;
   }
 }
-
+*/
 /* humburger css  */
 
 .hamburger {

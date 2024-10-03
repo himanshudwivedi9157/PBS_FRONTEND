@@ -1,0 +1,28 @@
+.slider-container {
+  position: relative;
+  width: 100%; /* Full width */
+  padding: 20px; /* Add some padding if needed */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure buttons are above the slider */
+  color: black; /* Change the button color */
+  font-size: 24px; /* Adjust the button size */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: gray; /* Change color on hover */
+}
+
+.slick-slide img {
+  border-radius: 10px; /* Optional: rounded corners for images */
+}
+
+/* Optionally hide dots on larger screens */
+@media (min-width: 1024px) {
+  .slick-dots {
+    display: none;
+  }
+}
