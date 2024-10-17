@@ -71,7 +71,7 @@ const About = () => {
                 <figure className="vimeo youtube">
                   <img
                     src={about_us_new}
-                    alt="slider image"
+                    alt="slider"
                     height="700"
                     style={{ width: "100%", height: "685px" }}
                   />{" "}
