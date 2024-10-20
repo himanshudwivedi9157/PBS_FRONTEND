@@ -3,6 +3,7 @@ import { IoMdPhonePortrait } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import new_logo from "../assets/lps_web_logo.png";
+import lps_logo from "../assets/lps_web_logo.png";
 
 const Navbar = () => {
   return (
@@ -26,7 +27,7 @@ const Navbar = () => {
               <div className="header-top-account">
                 <div className="header-login">
                   {" "}
-                  <Link to="/Ragister" className="button1">
+                  <Link to="/Login" className="button1">
                     Login
                   </Link>
                 </div>
@@ -44,7 +45,7 @@ const Navbar = () => {
               <div className="header-bottom-content display-flex">
                 <div className="logo">
                   <Link to="/">
-                    <img src={new_logo} alt="LPS Global School" />
+                    <img src={lps_logo} alt="LPS Global School" />
                   </Link>
                 </div>
                 <div className="menu-search display-flex">
