@@ -14,7 +14,7 @@ const Testiminol = () => {
             <div class="col ">
               <div class="card h-100 rounded-0 background-grey border border-0">
                 <div class="card-body background-grey">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Our Parents</h5>
                   <p class="card-text">
                     "I enjoy coming to school every day. My teachers explain all
                     the topics very nicely. The school gives me a lot of
@@ -37,7 +37,7 @@ const Testiminol = () => {
             <div class="col ">
               <div class="card h-100 rounded-0 background-grey border border-0">
                 <div class="card-body background-grey">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Our Placment</h5>
                   <p class="card-text">
                     "I enjoy coming to school every day. My teachers explain all
                     the topics very nicely. The school gives me a lot of

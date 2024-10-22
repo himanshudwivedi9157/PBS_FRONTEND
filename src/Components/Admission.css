@@ -25,14 +25,14 @@
   margin: 0;
   padding: 0;
 } */
-
+/* 
 .sign-up {
   background: #fff url("../assets/signup-background.jpg") no-repeat center
     center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-}
+} */
 
 .sign-up:after {
   position: absolute;
